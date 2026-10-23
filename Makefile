@@ -38,4 +38,4 @@ frontend:
 	cd frontend && npm run dev
 
 demo:
-	$(PYTHON) scripts/demo.py --rounds 20 $(if $(SEED),--seed $(SEED),) $(if $(filter 1 true,$(NO_LLM)),--no-llm,)
+	$(PYTHON) ../scripts/demo.py --rounds 20 $(if $(SEED),--seed $(SEED),) $(if $(filter 1 true,$(NO_LLM)),--no-llm,)
