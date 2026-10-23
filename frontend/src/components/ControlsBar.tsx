@@ -53,7 +53,7 @@ export const ControlsBar: React.FC<ControlsBarProps> = ({
             onClick={handleStartClick}
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-black font-bold transition-all shadow-[0_0_12px_rgba(6,182,212,0.2)] cursor-pointer"
           >
-            <Play className="h-3.5 w-3.5 fill-current" /> Initialize Experiment
+            <Play className="h-3.5 w-3.5 fill-current" /> Start Experiment
           </button>
         ) : isPaused ? (
           <button

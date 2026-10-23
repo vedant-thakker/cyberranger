@@ -104,6 +104,8 @@ export default function App(): React.JSX.Element {
       setRounds([])
       const initialStats = await getExperimentStats(res.experiment_id)
       setStats(initialStats)
+      // Automatically launch autonomous rounds execution
+      await runAllRounds(res.experiment_id)
     } catch (err) {
       console.error('Failed to start experiment:', err)
     }
