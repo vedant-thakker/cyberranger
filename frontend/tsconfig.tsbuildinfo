@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx"],"version":"5.7.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/armsracechart.tsx","./src/components/banditchart.tsx","./src/components/controlsbar.tsx","./src/components/detectorimprovementchart.tsx","./src/components/eventfeed.tsx","./src/components/mapelitesmatrix.tsx","./src/components/metriccards.tsx","./src/components/statusbar.tsx","./src/components/triagemodal.tsx","./src/services/api.ts","./src/types/index.ts"],"version":"5.7.3"}
