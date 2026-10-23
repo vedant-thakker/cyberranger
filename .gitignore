@@ -18,8 +18,8 @@ frontend/dist/
 *.db
 *.sqlite3
 *.sqlite
-data/
-storage/
+/data/
+/storage/
 
 # System / Tools
 .DS_Store
