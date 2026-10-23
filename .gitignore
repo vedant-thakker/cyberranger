@@ -1,0 +1,26 @@
+# Virtual Environments
+backend/.venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+*.log
+
+# Databases & local state
+*.db
+*.sqlite3
+*.sqlite
+data/
+storage/
+
+# System / Tools
+.DS_Store
+.tools/

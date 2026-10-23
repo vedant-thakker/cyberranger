@@ -1,0 +1,26 @@
+[project]
+name = "cyberranger-backend"
+version = "0.1.0"
+description = "Autonomous CyberRanger Test Generation & Detection Research Platform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "requests>=2.32.0",
+    "scikit-learn>=1.5.0",
+    "numpy>=1.26.0",
+    "pydantic>=2.8.0",
+    "rich>=13.7.0",
+    "colorama>=0.4.6",
+    "sse-starlette>=2.1.0",
+    "pytest>=8.2.0",
+    "httpx>=0.27.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
