@@ -1,7 +1,8 @@
 .PHONY: help install start-target stop-target backend frontend demo test
 
-PYTHON := .tools/uv run --directory backend python3
-PYTEST := .tools/uv run --directory backend pytest
+UV := $(shell if [ -f .tools/uv ]; then echo .tools/uv; else command -v uv 2>/dev/null || echo uv; fi)
+PYTHON := $(UV) run --directory backend python3
+PYTEST := $(UV) run --directory backend pytest
 
 help:
 	@echo "CyberRanger Commands:"
@@ -15,7 +16,7 @@ help:
 
 install:
 	@echo "Setting up backend..."
-	cd backend && ../.tools/uv sync
+	@if [ -f .tools/uv ]; then cd backend && ../.tools/uv sync; else cd backend && uv sync; fi
 	@echo "Setting up frontend..."
 	cd frontend && npm install
 
